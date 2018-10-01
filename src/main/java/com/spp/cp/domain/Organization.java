@@ -25,7 +25,7 @@ public class Organization {
         this.id = id;
     }
 
-    @ManyToMany(fetch = FetchType.LAZY)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "org_subcontractors",
             joinColumns = { @JoinColumn(name = "org_id") },
             inverseJoinColumns = { @JoinColumn(name = "subcontractor_company_id") })

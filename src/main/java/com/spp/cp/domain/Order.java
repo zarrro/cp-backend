@@ -33,6 +33,8 @@ public class Order {
      */
     private User createdBy;
 
+    private Organization org;
+
     private Integer price;
 
     private String goods;
@@ -138,5 +140,15 @@ public class Order {
 
     public void setCreatedBy(User createdBy) {
         this.createdBy = createdBy;
+    }
+
+    @ManyToOne
+    @JoinColumn(name="org_id")
+    public Organization getOrg() {
+        return org;
+    }
+
+    public void setOrg(Organization org) {
+        this.org = org;
     }
 }

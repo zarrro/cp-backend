@@ -56,11 +56,6 @@ public class Company {
         return owner;
     }
 
-    @ManyToMany(fetch = FetchType.LAZY, mappedBy = "subContractors")
-    public Set<Organization> getContractors() {
-        return contractors;
-    }
-
     public void setContractors(Set<Organization> contractors) {
         this.contractors = contractors;
     }
