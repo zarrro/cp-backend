@@ -10,7 +10,7 @@ public class Freight {
     public enum State {
         PENDING,
         CONFIRMED,
-        lOADED,
+        LOADED,
         COMPLETED
     }
 

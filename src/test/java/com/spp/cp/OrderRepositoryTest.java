@@ -1,22 +1,18 @@
 package com.spp.cp;
 
-import com.spp.cp.db.CompanyRepository;
-import com.spp.cp.db.OrderRepository;
-import com.spp.cp.db.OrganizationRepository;
-import com.spp.cp.db.UserRepository;
-import com.spp.cp.domain.Company;
-import com.spp.cp.domain.Order;
-import com.spp.cp.domain.Organization;
-import com.spp.cp.domain.User;
+import com.spp.cp.db.*;
+import com.spp.cp.domain.*;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import javax.xml.crypto.Data;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -35,6 +31,9 @@ public class OrderRepositoryTest {
 
     @Autowired
     private CompanyRepository companyRepo;
+
+    @Autowired
+    private FreightRepository freightRepo;
 
     private Long orderId;
     private Organization org1;
@@ -141,6 +140,28 @@ public class OrderRepositoryTest {
 
         firstOrder = orderRepo.save(firstOrder);
 
+        Freight freight1 = new Freight();
+        freight1.setOrder(firstOrder);
+        freight1.setLoadDate(new Date());
+        freight1.setState(Freight.State.PENDING);
+
+        Freight freight2 = new Freight();
+        freight2.setOrder(firstOrder);
+
+        Date dt = new Date();
+        Calendar c = Calendar.getInstance();
+        c.setTime(dt);
+        c.add(Calendar.DATE, 1);
+        dt = c.getTime();
+        //TODO: explore if LocalDate and LocalDateTime can be used as DB types
+        freight2.setState(Freight.State.PENDING);
+        freight2.setLoadDate(dt);
+
+        List<Freight> freights = new ArrayList<>(2);
+        freights.add(freight1);
+        freights.add(freight2);
+        freightRepo.saveAll(freights);
+
         assertNotNull(firstOrder.getId());
         orderId = firstOrder.getId();
     }
@@ -153,9 +174,14 @@ public class OrderRepositoryTest {
         createOrders();
     }
 
-
     @Test
-    public void testFetchOrder() {
+    public void testFetchData() {
+        testFetchOrder();
+        testFetchOrganization();
+        testFetchFreight();
+    }
+
+    private void testFetchOrder() {
         //test fetch by order id
         Order order = orderRepo.findById(orderId).get();
 
@@ -175,8 +201,16 @@ public class OrderRepositoryTest {
         List<Order> orders = orderRepo.findByOrgId(zaro.getOrg().getId());
         assertEquals(1, orders.size());
         assertEquals(orders.get(0).getId(), orderId);
+    }
 
-        testFetchOrganization();
+    private void testFetchFreight() {
+        List<Freight> freights = freightRepo.findByOrderId(orderId);
+        assertNotNull(freights);
+        assertEquals(2, freights.size());
+        Freight f1 = freights.get(0);
+        Freight f2 = freights.get(1);
+        // f2 date is expected to be in the future compared to the f1 date
+        assertTrue(0 > f1.getLoadDate().compareTo(f2.getLoadDate()));
     }
 
     public void testFetchOrganization() {
