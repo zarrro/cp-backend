@@ -134,7 +134,6 @@ public class OrderRepositoryTest {
         firstOrder.setOrg(zaro.getOrg());
         firstOrder.setGoods("Cucumbers");
         firstOrder.setType(Order.Type.FTL);
-        firstOrder.setPrice(10050);
 
         assertNull(firstOrder.getId());
 
@@ -227,6 +226,7 @@ public class OrderRepositoryTest {
     @After
     public void tearDown() {
 
+        freightRepo.deleteAll();
         orderRepo.deleteById(orderId);
 
         assertFalse(orderRepo.findById(orderId).isPresent());

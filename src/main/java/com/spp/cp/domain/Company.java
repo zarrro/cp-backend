@@ -19,11 +19,6 @@ public class Company {
 
     private Organization owner;
 
-    /**
-     * Orgs to which this company is subcontractor.
-     */
-    private Set<Organization> contractors;
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     public Long getId() {
@@ -54,10 +49,6 @@ public class Company {
     @JoinColumn(name = "owner_org_id", nullable = true)
     public Organization getOwner() {
         return owner;
-    }
-
-    public void setContractors(Set<Organization> contractors) {
-        this.contractors = contractors;
     }
 
     public void setOwner(Organization org) {

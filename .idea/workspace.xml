@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java" line="14" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java" line="16" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="86013707-2c7b-473b-abb7-88c00b04f472" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/db/FreightRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/config/WebSecurityCorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/OrderAndFreightManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/OrderSpec.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/rest/BaseController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Freight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Freight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/AppConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/db/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/db/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrdersInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/spp/cp/OrderRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/spp/cp/OrderRepositoryTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -47,6 +63,18 @@
                 <item name="cp-backend" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cp-backend" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="cp-backend" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -58,76 +86,69 @@
     <session id="-789583922">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="21" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="3" />
-          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.12" value="2" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.14" value="2" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="4" />
-          <entry key="project.open.time.6" value="8" />
-          <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.8" value="4" />
-          <entry key="project.opened" value="26" />
+          <entry key="project.open.time.6" value="9" />
+          <entry key="project.open.time.7" value="5" />
+          <entry key="project.open.time.8" value="6" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="3" />
-          <entry key="java" value="107" />
-          <entry key="properties" value="3" />
+          <entry key="gradle" value="6" />
+          <entry key="java" value="141" />
+          <entry key="properties" value="5" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="107" />
-          <entry key="Properties" value="3" />
+          <entry key="Groovy" value="6" />
+          <entry key="JAVA" value="141" />
+          <entry key="Properties" value="5" />
           <entry key="SQL" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="7" />
-          <entry key="gradle" value="34" />
-          <entry key="java" value="10385" />
-          <entry key="properties" value="35" />
+          <entry key="gradle" value="49" />
+          <entry key="java" value="13306" />
+          <entry key="properties" value="75" />
           <entry key="sql" value="10" />
           <entry key="txt" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Groovy" value="34" />
-          <entry key="JAVA" value="10385" />
+          <entry key="Groovy" value="49" />
+          <entry key="JAVA" value="13306" />
           <entry key="PLAIN_TEXT" value="38" />
-          <entry key="Properties" value="35" />
+          <entry key="Properties" value="75" />
           <entry key="SQL" value="10" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="cp-backend" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/SecurityConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/spp/cp/OrderRepositoryTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="191">
-              <caret line="210" column="37" lean-forward="true" selection-start-line="210" selection-start-column="37" selection-end-line="210" selection-end-column="37" />
+            <state relative-caret-position="340">
+              <caret line="29" selection-start-line="28" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,48 +157,16 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Freight.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+            <state relative-caret-position="202">
+              <caret line="12" column="24" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#363#364#0" expanded="true" />
+                <element signature="e#397#398#0" expanded="true" />
+                <element signature="e#425#426#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/FreightRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1394">
-              <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2678#2679#0" expanded="true" />
-                <element signature="e#2709#2710#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -185,20 +174,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Organization.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Company.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="289">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -209,8 +195,81 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+            <state relative-caret-position="102">
+              <caret line="6" column="34" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserPrincipal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="45" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#541#542#0" expanded="true" />
+                <element signature="e#582#583#0" expanded="true" />
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#672#673#0" expanded="true" />
+                <element signature="e#962#963#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+                <element signature="e#1046#1047#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1162#1163#0" expanded="true" />
+                <element signature="e#1210#1211#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="43" column="28" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="28" />
+              <folding>
+                <element signature="e#2171#2172#0" expanded="true" />
+                <element signature="e#2204#2205#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="506">
+              <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/WebSecurityCorsFilter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -220,8 +279,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
     <option name="SCHEME" value="Project" />
@@ -233,6 +292,8 @@
       <find>com.spp.Test</find>
       <find>a</find>
       <find>insert into companies</find>
+      <find>passw</find>
+      <find>2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -431,9 +492,9 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="6134513160557" />
+        <entry key="$PROJECT_DIR$" value="6137034507054" />
         <entry key="$PROJECT_DIR$/.gradle" value="0" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="3942723849" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3746347501" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="2083459160" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="3098244329" />
       </map>
@@ -632,17 +693,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/rest/TruckController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/rest/OrdersInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/rest/OrderController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/InvoiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/domain/Invoice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/domain/FreightInvoice.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/rest/FreightInvoiceParams.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/rest/InvoiceController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/import.sql" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/ExcludeFronTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/TestApplication.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/ExcludeFromTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/spp/TruckRepositoryTest.java" />
@@ -669,28 +719,45 @@
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/VehicleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/CompanyRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/ModelRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/vehicle/Model.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/vehicle/Vehicle.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/SubOrder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Company.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Organization.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrganizationRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Freight.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/FreightRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/FreightManagementService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/OrderAndFreightManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Company.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/spp/cp/OrderRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/rest/BaseController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/AppConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/config/WebSecurityCorsFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/UserRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserDetailsService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserPrincipal.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/spp/cp/config/SecurityConfig.java" />
       </list>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="146" />
-    <option name="y" value="38" />
-    <option name="width" value="1699" />
-    <option name="height" value="1060" />
+    <option name="x" value="73" />
+    <option name="y" value="41" />
+    <option name="width" value="1731" />
+    <option name="height" value="1106" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -698,7 +765,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="cp-backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="cp-backend" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -739,47 +816,30 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="cp" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="rest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cp-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cp-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cp-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="cp-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="cp-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cp-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cp-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cp-backend" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="cp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="cp-backend" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="cp-backend" type="2674bda8:ScopeViewTreeModel$GroupNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ToolWindowAnt Build.ShowToolbar" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build/libs/cp-backend-0.1.0.jar" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -810,7 +870,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OrderRepositoryTest">
+  <component name="RunManager" selected="Gradle.cp-backend [bootRun]">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -828,6 +888,24 @@
         </option>
         <option name="taskNames">
           <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="cp-backend [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
@@ -973,15 +1051,15 @@
       <item itemvalue="Gradle.cp-backend [build]" />
       <item itemvalue="JUnit.OrderRepositoryTest" />
       <item itemvalue="JUnit.OrderRepositoryTest.testFetchData" />
-      <item itemvalue="JUnit.OrderRepositoryTest.testFetchData" />
+      <item itemvalue="Gradle.cp-backend [bootRun]" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.cp-backend [bootRun]" />
         <item itemvalue="JUnit.OrderRepositoryTest" />
         <item itemvalue="JUnit.OrderRepositoryTest.testFetchData" />
         <item itemvalue="JUnit.OrderRepositoryTest.testFetchData" />
         <item itemvalue="Gradle.cp-backend [build]" />
-        <item itemvalue="Gradle.cp-backend [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -999,6 +1077,7 @@
       <option name="presentableId" value="Default" />
       <updated>1532293073520</updated>
     </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1046,29 +1125,29 @@
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5278311" visible="true" weight="0.17377399" />
-      <window_info id="Structure" order="1" sideWeight="0.4721689" side_tool="true" weight="0.17377399" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5259117" visible="true" weight="0.1748401" />
+      <window_info active="true" id="Structure" order="1" sideWeight="0.47408828" side_tool="true" visible="true" weight="0.1748401" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" weight="0.32995737" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" sideWeight="0.4731286" side_tool="true" weight="0.17324094" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32981783" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.30614203" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39980826" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917467" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37044147" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39923224" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32901832" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32901832" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946696" weight="0.32821497" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32821497" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50053304" side_tool="true" weight="0.32821497" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.32901832" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32981783" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" auto_hide="true" id="Ant Build" order="1" type="SLIDING" weight="0.24955116" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" />
-      <window_info anchor="right" id="Gradle" order="5" sideWeight="0.48368523" weight="0.33955225" />
+      <window_info anchor="right" id="Maven Projects" order="4" weight="0.32974267" />
+      <window_info anchor="right" id="Gradle" order="5" sideWeight="0.48368523" visible="true" weight="0.2249467" />
       <window_info anchor="right" x="0" y="0" width="434" height="976" id="Documentation" order="6" sideWeight="0.5163148" side_tool="true" weight="0.33955225" />
     </layout>
   </component>
@@ -1087,30 +1166,11 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml" />
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/db.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/AppConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/domain/Route.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/TrucksInfo.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/InvoiceFiles.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/5.0.7.RELEASE/49134fcdaea19522741b2d940c4e5e5bee06c613/spring-webmvc-5.0.7.RELEASE-sources.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/domain/FreightInvoice.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.data/spring-data-commons/2.0.8.RELEASE/33fd91acb8935df722e05e0870a683ac1d3076a7/spring-data-commons-2.0.8.RELEASE-sources.jar!/org/springframework/data/repository/CrudRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -1131,13 +1191,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/domain/Truck.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="59" selection-start-line="29" selection-start-column="59" selection-end-line="29" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/db/TruckRepository.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/domain/Invoice.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/com/spp/TruckRepositoryTest.java" />
@@ -1156,42 +1209,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/domain/SubContractor.java" />
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hibernate.javax.persistence/hibernate-jpa-2.1-api/1.0.2.Final/604e1101cb261c61200bfd655dfc1aa5aeca36d6/hibernate-jpa-2.1-api-1.0.2.Final-sources.jar!/javax/persistence/CascadeType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="11" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="48" selection-start-line="19" selection-start-column="48" selection-end-line="19" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrdersInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -1228,13 +1250,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
@@ -1287,39 +1302,75 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/FreightRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="7" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        <state relative-caret-position="119">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/FreightManagementService.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/OrderAndFreightManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/OrderSpec.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/AppConfiguration.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/spp/cp/OrderRepositoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3638">
+          <caret line="228" column="32" selection-start-line="228" selection-start-column="32" selection-end-line="228" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Freight.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="119" column="5" selection-start-line="119" selection-start-column="5" selection-end-line="119" selection-end-column="5" />
+        <state relative-caret-position="493">
+          <caret line="34" column="25" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2678#2679#0" expanded="true" />
-            <element signature="e#2709#2710#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+        <state relative-caret-position="187">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Organization.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrdersInfo.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="35" column="41" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        <state relative-caret-position="119">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserDetailsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="24" column="1" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1328,45 +1379,122 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Company.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="102">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/MyUserPrincipal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="45" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#541#542#0" expanded="true" />
+            <element signature="e#582#583#0" expanded="true" />
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#962#963#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1046#1047#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1162#1163#0" expanded="true" />
+            <element signature="e#1210#1211#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="7" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        <state relative-caret-position="102">
+          <caret line="6" column="34" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Freight.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Organization.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="15" lean-forward="true" selection-start-line="12" selection-start-column="15" selection-end-line="12" selection-end-column="15" />
+        <state relative-caret-position="102">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#363#364#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#425#426#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/WebSecurityCorsFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="66" selection-start-line="16" selection-start-column="66" selection-end-line="16" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/FreightRepository.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/rest/OrderController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="506">
+          <caret line="36" column="53" selection-start-line="36" selection-start-column="53" selection-end-line="36" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/spp/cp/OrderRepositoryTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/domain/Order.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="210" column="37" lean-forward="true" selection-start-line="210" selection-start-column="37" selection-end-line="210" selection-end-column="37" />
+        <state relative-caret-position="561">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="25" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <element signature="e#2171#2172#0" expanded="true" />
+            <element signature="e#2204#2205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/db/OrderRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/config/SecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" selection-start-line="28" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/spp/cp/DataInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="24" lean-forward="true" selection-start-line="44" selection-start-column="24" selection-end-line="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1425,7 +1553,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>cp-backend_test|cp-backend</last-edited>
+          <last-edited>cp-backend_main|cp-backend</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

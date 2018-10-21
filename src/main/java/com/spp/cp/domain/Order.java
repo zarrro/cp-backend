@@ -18,6 +18,12 @@ import java.util.Set;
 )
 public class Order {
 
+    public enum State {
+        OPEN,
+        CLOSED_COMPLETED,
+        CLOSED_INCOMPLETED
+    }
+
     public enum Type {
         FTL, LTL
     }
@@ -25,6 +31,8 @@ public class Order {
     private Long id;
 
     private Company customer;
+
+    private State state;
 
     private Company contractor;
 
@@ -35,13 +43,13 @@ public class Order {
 
     private Organization org;
 
-    private Integer price;
-
     private String goods;
 
     private Type type;
 
-    private Set<Freight> freights;
+    private Date deadline;
+
+//    private Set<Freight> freights;
 
     private Date createdAt;
 
@@ -99,38 +107,15 @@ public class Order {
         this.contractor = contractor;
     }
 
-    public Integer getPrice() {
-        return price;
-    }
 
-    public void setPrice(Integer price) {
-        this.price = price;
-    }
-
-    public String getGoods() {
-        return goods;
-    }
-
-    public void setGoods(String goods) {
-        this.goods = goods;
-    }
-
-    public Type getType() {
-        return type;
-    }
-
-    public void setType(Type type) {
-        this.type = type;
-    }
-
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    public Set<Freight> getFreights() {
-        return freights;
-    }
-
-    public void setFreights(Set<Freight> freights) {
-        this.freights = freights;
-    }
+//    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
+//    public Set<Freight> getFreights() {
+//        return freights;
+//    }
+//
+//    public void setFreights(Set<Freight> freights) {
+//        this.freights = freights;
+//    }
 
     @ManyToOne
     @JoinColumn(name="created_by")
@@ -150,5 +135,41 @@ public class Order {
 
     public void setOrg(Organization org) {
         this.org = org;
+    }
+    public String getGoods() {
+        return goods;
+    }
+
+    public void setGoods(String goods) {
+        this.goods = goods;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    public State getState() {
+        return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
+    }
+
+    /**
+     * Optional. The date by which all freight will have to be completed. User will get warning,
+     * if the date is closing and there is not completed freights
+     * @return
+     */
+    public Date getDeadline() {
+        return deadline;
+    }
+
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
     }
 }
