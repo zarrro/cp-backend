@@ -1,4 +1,4 @@
-package com.spp.cp.domain;
+package com.spp.cp.domain.entities;
 
 import javax.persistence.*;
 

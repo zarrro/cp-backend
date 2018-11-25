@@ -1,17 +1,13 @@
 package com.spp.cp;
 
 import com.spp.cp.db.*;
-import com.spp.cp.domain.*;
+import com.spp.cp.domain.entities.*;
 import org.junit.*;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import javax.xml.crypto.Data;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.util.*;
 
 import static org.junit.Assert.*;
@@ -41,9 +37,9 @@ public class OrderRepositoryTest {
     private Company fantastiko;
     private Company peevi;
     private Company dudovi;
-    private User zaro;
-    private User kita;
-    private User stefan;
+    private UserEntity zaro;
+    private UserEntity kita;
+    private UserEntity stefan;
 
     private void createOrganizations() {
         Organization org1 = new Organization();
@@ -62,15 +58,15 @@ public class OrderRepositoryTest {
     }
 
     private void createUsers() {
-        User zaro = new User();
+        UserEntity zaro = new UserEntity();
         zaro.setEmail("zaro@gmail.com");
         zaro.setOrg(org1);
 
-        User kita = new User();
+        UserEntity kita = new UserEntity();
         kita.setEmail("kita@gmail.com");
         kita.setOrg(org1);;
 
-        User stefan = new User();
+        UserEntity stefan = new UserEntity();
         stefan.setEmail("stefan@yahoo.com");
         stefan.setOrg(org2);
 

@@ -1,5 +1,5 @@
 package com.spp.cp.config;
-import com.spp.cp.domain.User;
+import com.spp.cp.domain.entities.UserEntity;
 
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -11,9 +11,9 @@ import java.util.List;
 
 public class MyUserPrincipal implements UserDetails {
 
-    private User user;
+    private UserEntity user;
 
-    public MyUserPrincipal(User user) {
+    public MyUserPrincipal(UserEntity user) {
         this.user = user;
     }
 
@@ -29,7 +29,7 @@ public class MyUserPrincipal implements UserDetails {
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        final List<GrantedAuthority> authorities = Collections.singletonList(new SimpleGrantedAuthority("User"));
+        final List<GrantedAuthority> authorities = Collections.singletonList(new SimpleGrantedAuthority("UserEntity"));
         return authorities;
     }
 
@@ -55,7 +55,7 @@ public class MyUserPrincipal implements UserDetails {
 
     //
 
-    public User getUser() {
+    public UserEntity getUser() {
         return user;
     }
 

@@ -1,6 +1,6 @@
 package com.spp.cp.domain.vehicle;
 
-import com.spp.cp.domain.Company;
+import com.spp.cp.domain.entities.Company;
 
 import javax.persistence.*;
 import java.util.Date;

@@ -16,6 +16,7 @@ public class WebSecurityCorsFilter implements Filter {
         res.setHeader("Access-Control-Max-Age", "3600");
         res.setHeader("Access-Control-Allow-Credentials", "true");
         res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, Accept, x-requested-with, Cache-Control");
+        res.setHeader("Access-Control-Expose-Headers", "Link");
         chain.doFilter(request, res);
     }
     @Override

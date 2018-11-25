@@ -1,10 +1,13 @@
-package com.spp.cp.domain;
+package com.spp.cp.domain.entities;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
 @Entity
 @Table(name = "users")
-public class User {
+@JsonIgnoreProperties(value = {"password"})
+public class UserEntity {
 
     private Long id;
 
@@ -13,7 +16,6 @@ public class User {
     private Organization org;
 
     private String username;
-
 
     private String password;
 

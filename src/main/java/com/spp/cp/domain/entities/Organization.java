@@ -1,8 +1,7 @@
-package com.spp.cp.domain;
-
-import org.springframework.web.bind.annotation.Mapping;
+package com.spp.cp.domain.entities;
 
 import javax.persistence.*;
+import java.util.Objects;
 import java.util.Set;
 
 @Entity
@@ -43,5 +42,22 @@ public class Organization {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    /**
+     * subContractors is not included in Organization's equals.
+     */
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Organization that = (Organization) o;
+        return Objects.equals(id, that.id) &&
+                Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name);
     }
 }

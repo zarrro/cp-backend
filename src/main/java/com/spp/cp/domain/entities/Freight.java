@@ -1,7 +1,8 @@
-package com.spp.cp.domain;
+package com.spp.cp.domain.entities;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Table(name = "freights")
@@ -19,6 +20,7 @@ public class Freight {
     private Order order;
     private SubOrder subOrder;
     private Date loadDate;
+    private List<Address> addresses;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -64,5 +66,14 @@ public class Freight {
 
     public void setState(State state) {
         this.state = state;
+    }
+
+    @ElementCollection
+    public List<Address> getAddresses() {
+        return addresses;
+    }
+
+    public void setAddresses(List<Address> addresses) {
+        this.addresses = addresses;
     }
 }

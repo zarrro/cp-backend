@@ -1,6 +1,6 @@
 package com.spp.cp.db;
 
-import com.spp.cp.domain.Freight;
+import com.spp.cp.domain.entities.Freight;
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;

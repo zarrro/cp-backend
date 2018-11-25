@@ -1,51 +1,72 @@
 package com.spp.cp.rest;
 
 import com.spp.cp.db.OrderRepository;
-import com.spp.cp.domain.Order;
+import com.spp.cp.domain.Exceptions;
+import com.spp.cp.domain.OrderService;
+import com.spp.cp.domain.entities.Order;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.context.ApplicationEventPublisher;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
 
+import javax.servlet.http.HttpServletResponse;
 import java.util.List;
+import java.util.Optional;
 
 @RestController()
 @RequestMapping("/orders")
 public class OrderController {
 
     @Autowired
+    protected ApplicationEventPublisher eventPublisher;
+
+    @Autowired
     private OrderRepository orderRepo;
 
-    @PostMapping(consumes = "application/json")
-    public Order createOrder(@RequestBody Order order) {
-        if (order == null) {
-            throw new IllegalArgumentException("order is null");
-        }
-
-        return this.orderRepo.save(order);
-    }
+    @Autowired
+    private OrderService orderService;
 
     @GetMapping
-    public List<Order> getOrdersInfo() {
+    public List<Order> getOrdersPage(@RequestParam("page") Optional<Integer> page, @RequestParam("size") Optional<Integer> size,
+                                     UriComponentsBuilder uriBuilder, HttpServletResponse response) {
 
-        Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+        // if page or size are not set, return all results without pagination
+        if (!(page.isPresent() && size.isPresent())) {
+            return this.orderRepo.findAllOrders();
+        } else {
+            Pageable pageRequest = PageRequest.of(page.get(), size.get());
+            Page<Order> resultPage = this.orderRepo.findAllOrders(pageRequest);
 
-        System.out.println(auth.getName());
+            eventPublisher.publishEvent(new PaginatedResultsRetrievedEvent<Order>
+                    (Order.class, uriBuilder, response, page.get(), resultPage.getTotalPages(), size.get()));
 
-//        Iterable<Order> orders = this.orderRepo.findAllCurrentOrgOrders();
-//        List<Order> result = new LinkedList<>();
-//        orders.forEach(order -> result.add(order));
-        return this.orderRepo.findAllCurrentOrgOrders();
+            return this.orderRepo.findAllOrders(pageRequest).getContent();
+        }
     }
 
-    @PatchMapping
-    public void updateOrder(@RequestBody Order order) {
-        if (order == null) {
-            throw new IllegalArgumentException("order id is not set");
+    @GetMapping("/{orderId}")
+    @ResponseBody
+    public Order getOrder(@PathVariable Long orderId) {
+        Optional<Order> o = orderRepo.findById(orderId);
+        if (o.isPresent()) {
+            return o.get();
+        } else {
+            throw new Exceptions.EntityNotFoundException("orderId " + orderId);
         }
-        if (!this.orderRepo.existsById(order.getId())) {
-            throw new IllegalArgumentException("order with id " + order.getId() + " doesn't exist");
-        }
-        this.orderRepo.save(order);
+    }
+
+    @PostMapping(consumes = "application/json")
+    @ResponseBody
+    public Order createOrder(@RequestBody CreateOrderParams params) {
+        return orderService.createOrder(params);
+    }
+
+    @PatchMapping(consumes = "application/json", value = "/{orderId}")
+    @ResponseBody
+    public Order updateOrder(@PathVariable Long orderId, @RequestBody UpdateOrderParams updateParams) {
+        return orderService.updateOrder(orderId, updateParams);
     }
 }
